@@ -13,8 +13,14 @@ img {
     margin-bottom: 100px;
   }
   footer {
-    margin-right: 10px;
+    margin: 10px 50px 0px 0px;
     border: 0px;
+  }
+  footer p {
+    text-align: end;
+  }
+  hr{ 
+    width: 100%;
   }
   .merriweather-light {
     font-family: "Merriweather", serif;
@@ -44,6 +50,7 @@ img {
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: italic;
+    font-size: small;
   }
   
   .merriweather-regular-italic {
