@@ -1,81 +1,185 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Segunda entrega</title>
-</head>
-<body>
-  <div class="content">
-    <header class="merriweather-regular-italic" ><!--Header con NavBar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--NavBar-->
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="../Resources/Logo.png" alt="Logo" width="54" class="logo" class="d-inline-block align-text-top">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link "  aria-current="page" href="/mi-repositorio/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  href="marcasdisponibles.html">Marcas disponibles</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  href="nuestrosmayoristas.html">Nuestros Mayoristas</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Ayuda
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="contactanos.html">Contactanos</a></li>
-                      <li><a class="dropdown-item active" href="sobrenosotros.html">Sobre nosotros</a></li>
-                      <li><a class="dropdown-item" href="nuestrasredes.html">Nuestras redes</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+  </head>
+  <body>
+    <div class="content">
+      <header class="merriweather-regular-italic">
+        <!--Header con NavBar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <!--NavBar-->
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="../Resources/Logo.png"
+                alt="Logo"
+                width="54"
+                class="logo"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/mi-repositorio/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="marcasdisponibles.html"
+                    >Marcas disponibles</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nuestrosmayoristas.html"
+                    >Nuestros Mayoristas</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Ayuda
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="contactanos.html"
+                        >Contactanos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item active" href="sobrenosotros.html"
+                        >Sobre nosotros</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="nuestrasredes.html"
+                        >Nuestras redes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-          </nav>
-    </header>
-    <section class="merriweather-regular-italic">
-      <div class="col-md-3 float-md-end mb-3 ms-md-3 text-center">
-      <img src="../Resources/IMG-20240512-WA0005.jpg" class="img-fluid d-block mx-auto" alt="...">
-      </div>
+          </div>
+        </nav>
+      </header>
+      <section class="merriweather-regular-italic">
+        <!--Contenido-->
+        <div class="col-md-3 float-md-end mb-3 ms-md-3 text-center">
+          <img
+            src="../Resources/IMG-20240512-WA0005.jpg"
+            class="img-fluid d-block mx-auto"
+            alt="..."
+          />
+        </div>
 
-       <h2>Bienvenido a MyNewShop, la plataforma diseñada especialmente para los negocios emergentes en Argentina!</h2>
-       <p>Somos un equipo apasionado de emprendedores compuesto por Brian y Diana. Brian, nuestro genio de la programación, se asegura de que nuestra plataforma funcione sin problemas, mientras que Diana aporta su talento para el diseño y la experiencia del usuario. Además, contamos con la invaluable ayuda de nuestro querido gato, Simbi, Chimbi o Chimba (¡puedes elegir el nombre que más te guste!), quien se encarga de impulsar nuestra estrategia de marketing.</p>      
+        <h2>
+          Bienvenido a MyNewShop, la plataforma diseñada especialmente para los
+          negocios emergentes en Argentina!
+        </h2>
+        <p>
+          Somos un equipo apasionado de emprendedores compuesto por Brian y
+          Diana. Brian, nuestro genio de la programación, se asegura de que
+          nuestra plataforma funcione sin problemas, mientras que Diana aporta
+          su talento para el diseño y la experiencia del usuario. Además,
+          contamos con la invaluable ayuda de nuestro querido gato, Simbi,
+          Chimbi o Chimba (¡puedes elegir el nombre que más te guste!), quien se
+          encarga de impulsar nuestra estrategia de marketing.
+        </p>
 
-       <h3>Características Principales:</h3>
-       <ul>
-         <li>Lista de Distribuidores Cercanos: Ponemos a disposición de nuestros usuarios una lista exhaustiva de distribuidores cercanos, lo que les permite comparar y elegir el que mejor se adapte a sus necesidades.</li>
-         <li>Información Detallada: Proporcionamos información detallada sobre precios de entrega, productos disponibles y descuentos por encargar diferentes packs, para que nuestros usuarios puedan tomar decisiones informadas.</li>
-         <li>Compras al Mayoreo: Facilitamos las compras al por mayor, permitiendo a nuestros usuarios realizar pedidos grandes de manera rápida y sencilla.</li>
-         <li>Registro Personalizado: Ofrecemos un registro actualizado y personalizado para cada local, eliminando la necesidad de utilizar hojas de cálculo manuales o anotar pedidos en una planilla todo el tiempo.</li>
-       </ul>
-            
-       <h3>Objetivos:</h3>
-       <p>Nuestra plataforma nace con la visión de facilitar el proceso de abastecimiento para los negocios emergentes en Argentina. Estamos comprometidos a proporcionar una plataforma intuitiva y fácil de usar que permita a nuestros usuarios encontrar distribuidores confiables y realizar pedidos de manera eficiente.</p>
-      
-       <h3>Próximos Pasos:</h3>
-       <p>Estamos constantemente trabajando para mejorar nuestra plataforma y agregar nuevas características que sean útiles para nuestros usuarios. Este proyecto es un testeo para el público argentino, y estamos emocionados de poder ofrecer esta solución innovadora a la comunidad de emprendedores en el país.</p>
-       <p>Si tienes alguna sugerencia o comentario, ¡no dudes en ponerte en contacto con nosotros! ¡Gracias por ser parte de MyNewShop!</p>
-      
-    </section>
-  </div>
-    <footer><!--Footer-->
-      <hr class="">
+        <h3>Características Principales:</h3>
+        <ul>
+          <li>
+            Lista de Distribuidores Cercanos: Ponemos a disposición de nuestros
+            usuarios una lista exhaustiva de distribuidores cercanos, lo que les
+            permite comparar y elegir el que mejor se adapte a sus necesidades.
+          </li>
+          <li>
+            Información Detallada: Proporcionamos información detallada sobre
+            precios de entrega, productos disponibles y descuentos por encargar
+            diferentes packs, para que nuestros usuarios puedan tomar decisiones
+            informadas.
+          </li>
+          <li>
+            Compras al Mayoreo: Facilitamos las compras al por mayor,
+            permitiendo a nuestros usuarios realizar pedidos grandes de manera
+            rápida y sencilla.
+          </li>
+          <li>
+            Registro Personalizado: Ofrecemos un registro actualizado y
+            personalizado para cada local, eliminando la necesidad de utilizar
+            hojas de cálculo manuales o anotar pedidos en una planilla todo el
+            tiempo.
+          </li>
+        </ul>
+
+        <h3>Objetivos:</h3>
+        <p>
+          Nuestra plataforma nace con la visión de facilitar el proceso de
+          abastecimiento para los negocios emergentes en Argentina. Estamos
+          comprometidos a proporcionar una plataforma intuitiva y fácil de usar
+          que permita a nuestros usuarios encontrar distribuidores confiables y
+          realizar pedidos de manera eficiente.
+        </p>
+
+        <h3>Próximos Pasos:</h3>
+        <p>
+          Estamos constantemente trabajando para mejorar nuestra plataforma y
+          agregar nuevas características que sean útiles para nuestros usuarios.
+          Este proyecto es un testeo para el público argentino, y estamos
+          emocionados de poder ofrecer esta solución innovadora a la comunidad
+          de emprendedores en el país.
+        </p>
+        <p>
+          Si tienes alguna sugerencia o comentario, ¡no dudes en ponerte en
+          contacto con nosotros! ¡Gracias por ser parte de MyNewShop!
+        </p>
+      </section>
+    </div>
+    <footer>
+      <!--Footer-->
+      <hr class="" />
       <p class="merriweather-light-italic">Todos los derechos reservados</p>
     </footer>
   </body>
