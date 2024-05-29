@@ -1,0 +1,208 @@
+// Variables
+$primary-color: #28a745;
+$card-border-radius: 8px;
+
+
+@mixin font-merriweather($weight, $style) {
+  font-family: "Merriweather", serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+
+%font-merriweather {
+  @include font-merriweather(400, normal);
+}
+
+%font-merriweather-light {
+  @include font-merriweather(300, normal);
+}
+
+%font-merriweather-bold {
+  @include font-merriweather(700, normal);
+}
+
+%font-merriweather-black {
+  @include font-merriweather(900, normal);
+}
+
+%font-merriweather-italic {
+  @include font-merriweather(400, italic);
+}
+
+%font-merriweather-light-italic {
+  @include font-merriweather(300, italic);
+}
+
+%font-merriweather-bold-italic {
+  @include font-merriweather(700, italic);
+}
+
+%font-merriweather-black-italic {
+  @include font-merriweather(900, italic);
+}
+
+// Media Queries
+$mobile: 768px;
+$tablet: 1024px;
+
+// Styles
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  font-size: 16px;
+
+ 
+  h2, h3, p {
+    margin: 10px 20px;
+  }
+
+  footer {
+    position: absolute;
+    margin-top: 10px;
+    margin-right: -10px;
+    width: 219vh;
+    height: 10vh;
+    bottom: 0;
+    text-align: end;
+  }
+
+  .content {
+    padding-bottom: 10vh;
+  }
+}
+
+#mainimg {
+  width: 120%;
+  margin: 30px;
+}
+
+.logo {
+  width: 60px;
+  margin: 0;
+}
+
+.container1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 16px;
+
+  
+  @extend %font-merriweather;
+}
+
+.container1 img {
+  width: 50%;
+  height: auto;
+  display: fe;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+
+  // Media Query
+  @media (max-width: $mobile) {
+    margin-bottom: 50px;
+  }
+
+  
+  form {
+    display: flex;
+    gap: 8px;
+  }
+
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 8px 16px;
+    border: 1px solid $primary-color;
+    background-color: transparent;
+    color: $primary-color;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+  // Media Query
+  @media (max-width: $tablet) {
+    height: auto;
+    padding: 16px;
+
+    
+    form {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    input, button {
+      width: 100%;
+    }
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  // Media Query
+  @media (max-width: $mobile) {
+    margin-bottom: 16px;
+  }
+
+  img {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    border-radius: $card-border-radius;
+    align-self: center;
+  }
+
+  .card-body {
+    padding: 16px;
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+    }
+  }
+}
