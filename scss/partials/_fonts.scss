@@ -1,10 +1,5 @@
+@import "mixins.scss";
 
-
-@mixin font-merriweather($weight, $style) {
-  font-family: "Merriweather", serif;
-  font-weight: $weight;
-  font-style: $style;
-}
 %font-merriweather {
   @include font-merriweather(400, normal);
 }

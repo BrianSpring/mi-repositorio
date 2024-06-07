@@ -1,0 +1,5 @@
+@mixin font-merriweather($weight, $style) {
+    font-family: "Merriweather", serif;
+    font-weight: $weight;
+    font-style: $style;
+  }
