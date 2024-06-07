@@ -1,0 +1,41 @@
+@import "variables.scss";
+
+$mobile: 768px;
+$tablet: 1024px;
+
+.searchbar {
+    @media (max-width: $mobile) {
+      margin-bottom: 50px;
+    }
+  
+    @media (max-width: $tablet) {
+      height: auto;
+      padding: 16px;
+  
+      form {
+        flex-direction: column;
+        gap: 16px;
+      }
+  
+      input,
+      button {
+        width: 100%;
+      }
+    }
+  }
+  
+  .card {
+    @media (max-width: $mobile) {
+      margin-bottom: 16px;
+    }
+  }
+  
+  .mainimg {
+    @media (max-width: $mobile) {
+      width: 100% ;
+    }
+    @media (max-width: $tablet ){
+        width: 100%;
+        
+    }
+  }

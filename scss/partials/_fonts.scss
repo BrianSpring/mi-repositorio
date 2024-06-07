@@ -1,0 +1,36 @@
+
+
+@mixin font-merriweather($weight, $style) {
+  font-family: "Merriweather", serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+%font-merriweather {
+  @include font-merriweather(400, normal);
+}
+
+%font-merriweather-light {
+  @include font-merriweather(300, normal);
+}
+%font-merriweather-bold {
+  @include font-merriweather(700, normal);
+}
+
+%font-merriweather-black {
+  @include font-merriweather(900, normal);
+}
+%font-merriweather-italic {
+  @include font-merriweather(400, italic);
+}
+
+%font-merriweather-light-italic {
+  @include font-merriweather(300, italic);
+}
+
+%font-merriweather-bold-italic {
+  @include font-merriweather(700, italic);
+}
+
+%font-merriweather-black-italic {
+  @include font-merriweather(900, italic);
+}

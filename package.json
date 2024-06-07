@@ -1,0 +1,11 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "Bienvenido a MyNewShop\r ¡Gracias por interesarte en nuestra página diseñada para los negocios emergentes en Argentina!",
+  "main": "index.js",
+  "scripts": { 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
