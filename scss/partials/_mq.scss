@@ -36,6 +36,13 @@ $tablet: 1024px;
     }
     @media (max-width: $tablet ){
         width: 100%;
-        
     }
+  }
+  .navbar {
+    .nav-item{
+      @media (max-width: $tablet ){
+      background-color: $background-color;
+      border-radius: 0%;
+    } 
+    } 
   }
