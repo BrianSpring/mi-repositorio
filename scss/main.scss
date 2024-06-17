@@ -100,6 +100,18 @@ footer {
   margin-top: 20px;
 }
 
+.form-section {
+  background-color: $background-color;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
 .card {
   height: 400px;
   display: flex;
